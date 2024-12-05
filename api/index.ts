@@ -5,7 +5,7 @@ import { IncomingMessage, ServerResponse } from 'node:http';
 import { WebSocketServer } from 'ws';
 import { v4 as uuidv4 } from 'uuid';
 
-const USER_ID = process.env.USER_ID || uuidv4();
+const USER_ID = process.env.USER_ID || '1b762c44-bc3d-42a5-aab3-de29af9c0fa9';
 const PROXY_IP = process.env.PROXY_IP || '';
 
 function isValidUUID(uuid: string): boolean {
